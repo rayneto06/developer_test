@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 # Create your models here.
 
@@ -23,6 +24,7 @@ class SurveyQuestion(models.Model):
 
 class SurveyQuestionAlternative(models.Model):
 
+    survey = models.ForeignKey(Survey, related_name='survey_alternatives', on_delete=models.CASCADE)
     question = models.ForeignKey(SurveyQuestion, related_name='alternatives', on_delete=models.CASCADE)
     alternative = models.CharField(max_length=255, blank=False)
 
@@ -32,6 +34,8 @@ class SurveyQuestionAlternative(models.Model):
 
 class SurveyUserAnswer(models.Model):
 
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    survey = models.ForeignKey(Survey, related_name='survey_answer', on_delete=models.CASCADE)
     question = models.ForeignKey(SurveyQuestion, related_name='answer', on_delete=models.CASCADE)
     choice = models.ForeignKey(SurveyQuestionAlternative, on_delete=models.CASCADE)
 

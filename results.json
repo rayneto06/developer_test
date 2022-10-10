@@ -1,32 +1,41 @@
 [
     {
+        "id": 1,
         "name": "Game genre",
         "description": "Preference for FPS or MOBA",
         "questions": [
             {
+                "id": 1,
                 "text": "Do you play games?",
                 "alternatives": [
                     {
+                        "id": 1,
                         "alternative": "Yes"
                     },
                     {
+                        "id": 2,
                         "alternative": "No"
                     }
                 ]
             },
             {
+                "id": 2,
                 "text": "What's your preferred platform?",
                 "alternatives": [
                     {
+                        "id": 3,
                         "alternative": "PC"
                     },
                     {
+                        "id": 4,
                         "alternative": "PS4"
                     },
                     {
+                        "id": 5,
                         "alternative": "XBOX"
                     },
                     {
+                        "id": 6,
                         "alternative": "Mobile"
                     }
                 ]
@@ -34,36 +43,46 @@
         ]
     },
     {
+        "id": 2,
         "name": "Pet preferences",
         "description": "Find people's pet preferences",
         "questions": [
             {
+                "id": 3,
                 "text": "Do you have a pet?",
                 "alternatives": [
                     {
+                        "id": 7,
                         "alternative": "Yes"
                     },
                     {
+                        "id": 8,
                         "alternative": "No"
                     }
                 ]
             },
             {
+                "id": 4,
                 "text": "Which kind of pet?",
                 "alternatives": [
                     {
+                        "id": 9,
                         "alternative": "Dog"
                     },
                     {
+                        "id": 10,
                         "alternative": "Cat"
                     },
                     {
+                        "id": 11,
                         "alternative": "Bird"
                     },
                     {
+                        "id": 12,
                         "alternative": "Snake"
                     },
                     {
+                        "id": 13,
                         "alternative": "Baby hippo"
                     }
                 ]
