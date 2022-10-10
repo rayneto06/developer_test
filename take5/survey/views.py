@@ -1,7 +1,6 @@
-from django.shortcuts import render
 from rest_framework import viewsets
 from rest_framework import permissions
-from survey.serializers import SurveySerializer, SurveyQuestionSerializer, SurveyQuestionAlternativeSerializer
+from survey.serializers import SurveySerializer
 from survey.models import Survey
 
 # Create your views here.

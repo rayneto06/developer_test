@@ -3,7 +3,7 @@ from rest_framework import routers
 from survey import views
 
 router = routers.DefaultRouter()
-router.register(r'Survey', views.SurveyViewSet)
+router.register(r'survey', views.SurveyViewSet)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
