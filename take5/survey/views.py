@@ -5,7 +5,9 @@ from survey.models import Survey, SurveyQuestion, SurveyQuestionAlternative
 
 # Create your views here.
 
+
 class SurveyViewSet(viewsets.ModelViewSet):
+
     """
     API endpoint that allows users to be viewed or edited.
     """
@@ -13,7 +15,9 @@ class SurveyViewSet(viewsets.ModelViewSet):
     serializer_class = SurveySerializer
     permission_classes = [permissions.IsAuthenticated]
 
+
 class SurveyQuestionViewSet(viewsets.ModelViewSet):
+
     """
     API endpoint that allows users to be viewed or edited.
     """
@@ -21,11 +25,12 @@ class SurveyQuestionViewSet(viewsets.ModelViewSet):
     serializer_class = SurveyQuestionSerializer
     permission_classes = [permissions.IsAuthenticated]
 
+
 class SurveyQuestionAlternativeViewSet(viewsets.ModelViewSet):
+
     """
     API endpoint that allows users to be viewed or edited.
     """
     queryset = SurveyQuestionAlternative.objects.all()
     serializer_class = SurveyQuestionAlternativeSerializer
     permission_classes = [permissions.IsAuthenticated]
-
